@@ -1,5 +1,6 @@
 import timeit
 
+#Even fibonacci numbers
 def fibsum():
     #Starting values
     a = 1
