@@ -1,5 +1,6 @@
 import timeit
 
+#Multiples of 3 or 5
 def adder():
     x = 3
     y = 5
