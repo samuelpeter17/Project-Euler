@@ -2,8 +2,8 @@ import timeit
 
 #Smallest multiple
 def calc():
-    # Start at 2520 as it could be smallest multiple of 1-20
-    num = 2520
+    # Number should be a multiple of all the prime factors
+    num = 2*3*5*7*11*13*17*19
     factors = list(range(1,21))     #list of factors
     k = 0
     while (k == 0): #While the flag stays down
@@ -25,7 +25,7 @@ def calc():
         
         #If out of for loop and flag is down, increment num.
         if k == 0:
-            num = num + 1
+            num = num + 2    # Number is even since even numbers can't be factors of odd numbers, but odd numbers can be factors of both odd and even numbers.
         else:       #Else, the smallest multiple of 1-20 is found.
             break
     print(num, " is the answer.")
